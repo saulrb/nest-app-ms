@@ -1,17 +1,7 @@
-import {
-  Controller,
-  Get,
-  HttpCode,
-  Post,
-  Header,
-  Redirect,
-  Body,
-  Res,
-  HttpStatus
-} from '@nestjs/common'
+import { Controller, Get, Post, Redirect, Body, Res, HttpStatus } from '@nestjs/common'
 import { Response } from 'express'
 
-import { CatDto } from '~/cats/dto/cat-dto'
+import { CatDto } from '../cats/dto/cat-dto'
 
 @Controller('cats')
 export class CatsController {
